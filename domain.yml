@@ -1,0 +1,67 @@
+version: '3.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- coffee_Ouroba_alternatives
+- nlu_fallback
+- coffee_AbuAuf_alternatives
+- goodbye
+- coffee_alternatives
+- greet
+- asking_for_drinking_products
+- asking_for_hygiene_products
+- asking_for_food_products
+- asking_for_cooking_products
+- price_coffee
+- mood_unhappy
+- mood_great
+- affirm
+- deny
+- bot_challenge
+responses:
+  utter_coffee_alternatives:
+  - text: عندنا بن العميد , بن شاهين , بن العروبة , بن ابو عوف وبن اليمنى
+  utter_coffee_AbuAuf_alternatives:
+  - text: فيه قهوة تركى فاتح ووسط وغامق , سادة ومحوج , وفيه كمان قهوة فرنساوى , فيه كمان قهوة خضرا لو انت بتعمل دايت
+  utter_coffee_Ouroba_alternatives:
+  - text: فيه قهوة تركى فاتح ووسط وغامق , سادة ومحوج
+  utter_price_coffee:
+  - text: ب 30 جنيه بس
+  utter_greet:
+  - text: انت ازيك عامل ايه؟
+  utter_cheer_up:
+  - text: شوف دي كدا واضحك يعم
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: ساعدتك؟
+  utter_happy:
+  - text: عظيم كمل
+  utter_goodbye:
+  - text: سلام
+  utter_iamabot:
+  - text: انا الة من شركة راسا , تعرفها
+  utter_respond_for_cooking_products:
+  - text: لو بتسأل عن منتجات للطبخ , قسم مواد الطبخ في سكشن 7 ممر 1
+  utter_respond_for_drinking_products:
+  - text: قسم المشروبات سكشن رقم 1 في الممر التاني
+  utter_respond_for_food_products:
+  - text: سكشن الاطعمة مثل الارز والمكرونة وغيره في سكشن 4 ممر 5
+  utter_respond_for_cleaness_products:
+  - text: لو كنت بتسأل عن منتجات التنضيف فهي للاسف مش موجودة حاليا
+  utter_respond_for_hygiene_products:
+  - text: عشان توصل لقسم النظافة الشخصية هو اخر قسم من اول الممر الرابع
+actions:
+- utter_coffee_AbuAuf_alternatives
+- utter_coffee_Ouroba_alternatives
+- utter_coffee_alternatives
+- utter_did_that_help
+- utter_goodbye
+- utter_greet
+- utter_happy
+- utter_price_coffee
+- utter_respond_for_cleaness_products
+- utter_respond_for_cooking_products
+- utter_respond_for_drinking_products
+- utter_respond_for_food_products
+- utter_respond_for_hygiene_products
