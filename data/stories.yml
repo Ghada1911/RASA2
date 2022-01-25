@@ -1,0 +1,72 @@
+version: "3.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: interactive_story_1
+  steps:
+  - intent: price_coffee
+  - action: utter_price_coffee
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: interactive_story_1
+  steps:
+  - intent: asking_for_drinking_products
+  - action: utter_respond_for_drinking_products
+  - intent: asking_for_drinking_products
+  - action: utter_respond_for_drinking_products
+  - action: utter_did_that_help
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: coffee_alternatives
+  - action: utter_coffee_alternatives
+  - intent: coffee_AbuAuf_alternatives
+  - action: utter_coffee_AbuAuf_alternatives
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+
+- story: interactive_story_1
+  steps:
+  - intent: coffee_Ouroba_alternatives
+  - action: utter_coffee_Ouroba_alternatives
+
+- story: interactive_story_1
+  steps:
+  - intent: coffee_Ouroba_alternatives
+  - action: utter_coffee_Ouroba_alternatives
